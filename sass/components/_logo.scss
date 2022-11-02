@@ -1,0 +1,36 @@
+.logo-dark {
+    font-family: 'Raleway';
+    text-decoration: none;
+    font-style: normal, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--outline-color);
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+    transition: color var(--transition-dur-and-func);
+    
+}
+.logo-margin {
+    margin-right: 93px;
+}
+.logo-color-change {
+    color: var(--main-color-fomt);
+    
+    
+}
+.logo-white {
+    font-family: 'Raleway';
+    text-decoration: none;
+    font-style: normal, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--outline-color);
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    padding: 0px;
+    transition: color var(--transition-dur-and-func);
+    
+}
+.logo-color {
+    color: var(--main-light);
+    }

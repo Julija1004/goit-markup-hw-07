@@ -1,0 +1,17 @@
+.modal-form-submit {
+    align-self: center;
+    background: #2196F3;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    color: var(--main-light);
+    text-align: center;
+    border-color: transparent;
+    cursor: pointer;
+    padding: 10px 52px;
+    margin-top: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
+    }

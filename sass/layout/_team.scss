@@ -1,0 +1,65 @@
+.team{
+    background-color: #F5F4FA;
+    padding-bottom: 94px;
+}
+.team-wrapper{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.team-item{
+    background-color: var(--main-light);
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-items{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+.team-player-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    
+    }
+    .team-section-svg-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 16px;
+        align-items: center;
+        
+    }
+    
+    
+    .team-section-icon-wrapper {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+    }
+    
+    .team-section-svg {
+        fill: #AFB1B8;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    }
+    .team-section-icon-wrapper:hover,
+    .team-section-icon-wrapper:focus {
+        background-color: #2196F3;
+    }
+    
+    .team-section-icon-wrapper:hover .team-section-svg,
+    .team-section-icon-wrapper:focus .team-section-svg {
+        fill: #FFFFFF;
+    }

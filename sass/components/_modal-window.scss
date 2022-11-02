@@ -1,0 +1,230 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 250ms ease-in-out, visibility 250ms linear;
+}
+/*BACKDROP*/
+
+/*MODAL WINDOW*/
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 580px;
+    background-color: #FFFFFF;
+    padding: 40px;
+}
+.modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: var(--transition-dur-and-func);
+
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon {
+    fill: rgba(0, 0, 0, 0.1);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
+
+/*MODAL FORM*/
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.modal-form-capture{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+margin-bottom: 12px;
+}
+
+.modal-form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    transition: border-color var(--transition-dur-and-func);
+}
+
+.modal-form-input:focus {
+    border-color: #2196F3;
+    outline: none;
+}
+
+.modal-form-input:focus + .modal-form-icon {
+fill: var(--outline-color);
+}
+
+.module-form-input-desk {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: #757575;
+display: block;
+margin-bottom: 4px;
+}
+
+.modal-form-field {
+    margin-bottom: 10px;
+}
+
+.modal-form-field-textaria {
+    margin-bottom: 20px;
+}
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
+    transition: border-color var(--transition-dur-and-func);
+}
+.modal-form-input-wrapper {
+    position: relative;
+    display: block;
+    
+}
+.modal-form-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-text {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+.checkbox-link {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+text-decoration-line: underline;
+color: #2196F3;
+}
+
+.modal-form-message {
+    display: block
+    ;
+    width: 100%;
+    height: 120px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    transition: border-color var(--transition-dur-and-func);
+}
+
+.modal-form-message:focus {
+    border-color: var(--outline-color);
+    outline: none;
+}
+
+.modal-form-message::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-own-checkbox {
+    cursor: pointer;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    margin-right: 8.38px;
+}
+.modal-form-own-checkbox-icon {
+    display: none;
+    width: 16px;
+    height: 15px;
+}
+
+.modal-form-checkbox:checked + .modal-form-own-checkbox .modal-form-own-checkbox-icon {
+display: block;
+}
+.modal-form-checkbox:checked + .modal-form-own-checkbox {
+    border: transparent;
+}
+.modal-form-checkbox {
+    position: absolute;
+    appearance: none;
+}
+
+.modal-form-own-checkbox:focus + .modal-form-own-checkbox {
+    outline: 3px solid #212121;
+}
+
+.modal-form-submit {
+    align-self: center;
+    background: #2196F3;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    color: var(--main-light);
+    text-align: center;
+    border-color: transparent;
+    cursor: pointer;
+    padding: 10px 52px;
+    margin-top: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
+    }
+
+    .nav-button:hover, .nav-button:focus {
+        background: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        outline: none;
+    }

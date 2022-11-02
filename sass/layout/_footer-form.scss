@@ -1,0 +1,108 @@
+.newsletter{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-light);
+    margin-left: 93px;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.div-logo {
+
+    flex-grow: 1;
+}
+.newsletter p{
+margin-bottom: 20px;
+}
+
+.newsletter p{
+    margin-bottom: 20px;
+    }
+
+.newsletter__flex-container{
+    display: flex;
+    margin-top: 20px;
+            }
+
+.newsletter_text-field{
+    height: 50px;
+    /* flex-grow: 1; */
+    width: 358px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: var(--outline-color);
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+    font-weight: normal;
+
+    transition: outline-color var(--transition-dur-and-func);
+
+}
+
+.newsletter_text-field::placeholder{
+    font-size: 16px;
+
+    font-weight: 400;
+
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter_text-field:focus,
+.newsletter_text-field:active {
+    border-color: var(--outline-color);
+    outline: var(--outline-color) thick;
+}
+
+.newsletter_btn-suscribe{
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    min-width: 200px;
+    height: 50px;
+
+    font-family: "Roboto", sans-serif;
+    background-color: var(--outline-color);
+    color: var(--main-light);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    padding: 10px 28px;
+    margin-left: 12px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
+}
+
+.newsletter_btn-suscribe::after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    top: 50%;
+    right: 28px;
+    background-image: url(../images/send.svg);
+    background-repeat: no-repeat;
+
+}
+
+.newsletter_btn-suscribe:active, 
+.newsletter_btn-suscribe:focus{
+    background-color: #188CE8;
+}

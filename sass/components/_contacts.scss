@@ -1,0 +1,39 @@
+.contacts {
+    line-height: 1.71;
+    color: var(--main-light);
+    text-decoration: none;
+    background: var(--main-dark);
+    font-style: normal;
+    transition: color var(--transition-dur-and-func);
+   }
+   
+   .contacts:hover{
+   line-height: 1.71;
+   color: var(--outline-color);
+   text-decoration: none;
+   font-style: normal;
+   background: var(--main-dark);   
+   }
+   
+   .contacts:focus{
+   line-height: 1.71;
+   color: var(--outline-color);
+   text-decoration: none;
+   font-style: normal;
+   background: var(--main-dark);   
+   }
+   .color{
+       color: rgba(255, 255, 255, 0.6);
+   }
+   .icon-contacts {
+    display: inline-block;
+    margin-right: 10px;
+    fill: currentColor;
+    transition: color var(--transition-dur-and-func);
+
+    transition: fill 250ms var(--secondary-color);
+  }
+  .link:hover .icon-contacts, .link:focus .icon-contacts{
+    fill: #2196F3;;
+    outline: none;
+}

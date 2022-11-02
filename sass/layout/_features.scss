@@ -1,0 +1,28 @@
+.features{
+    display: flex;
+    justify-content: space-between;
+}
+.features-item {
+    width: 270px;
+}
+.features-title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+        
+    }
+    .features-text {
+    line-height: 1.71;
+    color: var(--secondary-color);
+    }
+    .features-item-svg-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5F4FA;
+        height: 120px;
+        margin-bottom: 30px;
+    }
